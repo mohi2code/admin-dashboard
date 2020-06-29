@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Protein Bar | Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <aside class="py-5 px-4 text-white">
+      <div class="brand">
+        <h1>Protein Bar <span class="underline"></span></h1>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="orders.html">Orders</a></li>
+      </ul>
+    </aside>
+
+    <main class="py-4 px-4 row">
+      <div class="charts col-7 p-3 d-flex flex-column">
+        <div id="sales" class="chart"></div>
+        <div id="customers" class="chart"></div>
+      </div>
+
+      <div class="cards col-5 p-3 d-flex flex-column">
+        <div class="card d-flex flex-column justify-content-center align-items-center">
+          <h1 class="font-weight-bolder">Net Sales <span class="badge badge-success ml-3">+13%</span></h1>
+          <p>130,000$</p>
+        </div>
+        <div class="card d-flex flex-column justify-content-center align-items-center">
+          <h1 class="font-weight-bolder">Customers<span class="badge badge-success ml-3">+4%</span></h1>
+          <p>498</p>
+        </div>
+        <div class="card d-flex flex-column justify-content-center align-items-center">
+          <h1 class="font-weight-bolder">Inventory</h1>
+          <p>20,000</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="/js/charts.js" charset="utf-8"></script>
+  </body>
+</html>

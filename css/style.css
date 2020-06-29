@@ -1,0 +1,131 @@
+/**
+* Base Configuration
+**/
+
+:root {
+  --primary-color: #5D4037;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background: #F4F4F4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+button, input, a {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+/**
+* App Styling
+**/
+
+/* Aside styling */
+
+aside {
+  position: fixed;
+  width: 23%;
+  height: 100%;
+  background: #333;
+  border-right: 1px solid #E9E9E9;
+}
+
+.brand {
+  padding-bottom: 4rem;
+}
+
+aside .brand h1 {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+aside ul {
+  list-style: none;
+  border: 1px solid #222;
+  border-radius: 3px;
+  background-color: #222;
+}
+
+aside ul li {
+  padding: .8rem;
+  border-bottom: 1px solid #1A1A1A;
+}
+
+aside ul a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #E1E1E1;
+}
+
+aside ul a:hover {
+  text-decoration: none;
+  color: #E1E1E1;
+}
+
+aside ul li:hover {
+  background: var(--primary-color);
+  border: none
+}
+
+/* Main Styling */
+
+main {
+  position: absolute;
+  left: 23%;
+  width: 77%;
+}
+
+.card {
+  padding: 3rem 0;
+  margin-bottom: 2.5rem;
+  background: #FFFFFF;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.06);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.06);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.06);
+}
+
+.card p {
+  margin-top: 2rem;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+/**
+* Helpers
+**/
+
+.underline {
+  display: block;
+  content: " ";
+  width: 20%;
+  height: 5px;
+  margin-top: .5rem;
+  background: var(--primary-color);
+}
+
+.chart {
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
